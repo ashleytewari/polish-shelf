@@ -26,7 +26,7 @@ label.rem{display:flex;gap:8px;align-items:center;justify-content:center;font-si
 <div id="msg" role="status" aria-live="polite"></div>
 </main><script>
 (()=>{   // wrapped so none of these names collide with the shelf page that replaces this one
-const SALT=Uint8Array.from(atob("uzGKE2bJTPHDc6+rW6Nw4Q=="),c=>c.charCodeAt(0)), ITER=310000;
+const SALT=Uint8Array.from(atob("A1wELkHhcCfb4u7g0T4Y2Q=="),c=>c.charCodeAt(0)), ITER=310000;
 const b64=u=>btoa(String.fromCharCode(...u)), unb=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
 const msg=t=>{document.getElementById("msg").textContent=t};
 let BLOB=null; const shelf=()=>BLOB||(BLOB=fetch("shelf.enc").then(r=>{if(!r.ok) throw new Error("net"); return r.arrayBuffer()}).then(b=>new Uint8Array(b)));
